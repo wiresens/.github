@@ -28,3 +28,22 @@ The solution may be deployed in in cluster configuration with one Control plane 
 ### CLI
 ### Ansible
 ## Worker Node
+They all work as daemon processes
+* FeedHanler
+* Strategy
+* Execution
+* Infrastructure Services
+### FeedHanler
+* Maintain network connectivity with the Binance exchange
+* Route exchange updates to connected clients
+* Route client requests to the relevant exchange accounts
+* Stream all messages to an event-log
+### Strategy
+An API providing with uniform interface for communication with the gateways. Strategies should preferably be implemented using C++20. It is a Multithreaded process, with :
+* StrategeyMaster, coordinating the acties of other threads
+* PolicyObjects, run the strategy , sending execution orders to Excution via the Opportunity Queue.
+### Execution
+### Infrastructure Services
+* Kafka Event-Streaming 
+* systemd-journald
+* PostgreSQL
