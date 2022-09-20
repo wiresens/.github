@@ -1,4 +1,4 @@
-# Wiresens Trading Solutions
+# IzyCoins Trading Solutions
 ## What
 * API's, Libraries and Tools to build own low-latency Trading Platform
 * Gateways Supporting Live Market Data Streaming  and Order Management
